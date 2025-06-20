@@ -23,6 +23,12 @@ import { logoutCandidate, changeCandidatePassword } from '../../reduxSlice/candi
 import { useSelector, useDispatch } from 'react-redux';
 import { Menu, MenuItem } from '@mui/material';
 import { Visibility, VisibilityOff, LockOutlined } from '@mui/icons-material';
+import {
+    Facebook as FacebookIcon,
+    YouTube as YouTubeIcon,
+    Twitter as TwitterIcon,
+    Instagram as InstagramIcon,
+} from '@mui/icons-material';
 
 
 const PublicAppBar = () => {
@@ -89,17 +95,15 @@ const PublicAppBar = () => {
                     }}
                 >
                     <Stack direction="row" alignItems="center" justifyContent="space-between">
-                        <Typography variant="body1" sx={{ color: theme.palette.info.light, fontSize: '14px' }}>
+                        <Typography variant="body1" sx={{ color: theme.palette.info.light, fontSize: '14px', alignItems: 'center' }}>
                             <CallIcon sx={{ fontSize: '15px' }} /> +91 6393351817
                         </Typography>
-                        <Typography
-                            component={Link}
-                            to="/employeelogin"
-                            variant="body1"
-                            sx={{ textDecoration: 'none', color: theme.palette.info.light, fontSize: '14px' }}
-                        >
-                            Employee Login
-                        </Typography>
+                        <Stack direction='row' spacing={2} >
+                            <FacebookIcon to="https://www.facebook.com/profile.php?id=100017834436266" sx={{ '&:hover': { transform: 'scale(1.1)' }, tranaition: 'all linear 0.5s ease', cursor: 'pointer', fontSize: '22px', color: '#fdfdfd' }} />
+                            <YouTubeIcon to="https://www.youtube.com/@amit_web_dev" sx={{ '&:hover': { transform: 'scale(1.1)' }, tranaition: 'all linear 0.5s ease', cursor: 'pointer', fontSize: '22px', color: '#fdfdfd' }} />
+                            <TwitterIcon sx={{ '&:hover': { transform: 'scale(1.1)' }, tranaition: 'all linear 0.5s ease', cursor: 'pointer', fontSize: '22px', color: '#fdfdfd' }} />
+                            <InstagramIcon to="https://www.linkedin.com/in/amit-kumar-492795290" sx={{ '&:hover': { transform: 'scale(1.1)' }, tranaition: 'all linear 0.5s ease', cursor: 'pointer', fontSize: '22px', color: '#fdfdfd' }} />
+                        </Stack>
                     </Stack>
                 </Box>
                 <Divider />

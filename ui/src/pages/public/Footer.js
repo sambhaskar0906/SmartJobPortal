@@ -5,10 +5,6 @@ import {
     EmailOutlined as EmailOutlinedIcon,
     LocationOnOutlined as LocationOutlinedOnIcon,
     CallOutlined as CallOutlinedIcon,
-    Facebook as FacebookIcon,
-    YouTube as YouTubeIcon,
-    Twitter as TwitterIcon,
-    Instagram as InstagramIcon,
     ChevronRight as ChevronRightIcon
 } from '@mui/icons-material';
 import Img1 from '../../assets/images/bg11.png';
@@ -44,12 +40,6 @@ const Footer = () => {
                                 <Typography variant="body1" sx={{ color: '#bdbdbd', fontSize: '13px' }}>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur sit eaque maxime nesciunt quasi consectetur facere eveniet molestiae voluptatem ex.
                                 </Typography>
-                                <Stack direction="row" sx={{ display: 'flex', alignItems: 'center' }}>
-                                    <FacebookIcon to="https://www.facebook.com/profile.php?id=100017834436266" sx={{ '&:hover': { transform: 'scale(1.1)' }, tranaition: 'all linear 0.5s ease', cursor: 'pointer', fontSize: '30px', color: '#fdfdfd', my: 2, mx: 1 }} />
-                                    <YouTubeIcon to="https://www.youtube.com/@amit_web_dev" sx={{ '&:hover': { transform: 'scale(1.1)' }, tranaition: 'all linear 0.5s ease', cursor: 'pointer', fontSize: '35px', color: '#fdfdfd', my: 2, mx: 1 }} />
-                                    <TwitterIcon sx={{ '&:hover': { transform: 'scale(1.1)' }, tranaition: 'all linear 0.5s ease', cursor: 'pointer', fontSize: '30px', color: '#fdfdfd', my: 2, mx: 1 }} />
-                                    <InstagramIcon to="https://www.linkedin.com/in/amit-kumar-492795290" sx={{ '&:hover': { transform: 'scale(1.1)' }, tranaition: 'all linear 0.5s ease', cursor: 'pointer', fontSize: '30px', color: '#fdfdfd', my: 2, mx: 1 }} />
-                                </Stack>
                             </Stack>
                         </Grid>
 
